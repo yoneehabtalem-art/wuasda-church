@@ -23,9 +23,7 @@ function Registration() {
     setMessage("Galmee ergaa jira...");
 
     try {
-      const response = await fetch(
-        "http://localhost:5000/registrations",
-        {
+      const response = await fetch("https://wuasda-church.onrender.com/registrations", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
