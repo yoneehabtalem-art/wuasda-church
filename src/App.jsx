@@ -33,7 +33,16 @@ function App() {
           <a href="#home">Home</a>
           <a href="#sabbath">Barumsa Sanbataa</a>
           <a href="#events">Sagantaa</a>
-          <a href="#news">Beeksisa</a>
+          <button
+  className="nav-link"
+  onClick={() => {
+    document
+      .getElementById("news")
+      ?.scrollIntoView({ behavior: "smooth" });
+  }}
+>
+  Beeksisa
+</button>
           <a href="#contact">Nu Qunnami</a>
         </nav>
 
@@ -119,15 +128,44 @@ function App() {
         </section>
 
         <section className="announcement" id="news">
-          <p>📢 BEEKSISA</p>
+  <div className="announcement-header">
+    <span>📢</span>
+    <h2>BEEKSISA</h2>
+  </div>
 
-          <h2>Beeksisa Haaraa</h2>
+  <h3>
+    Eebba Album Faarfannaa – Barumsa Sanbataa 9ffaa
+  </h3>
 
-          <p>
-            Beeksisni fi odeeffannoon WUASDA CHURCH
-            yeroo yeroon asitti ni maxxanfama.
-          </p>
-        </section>
+  <p>
+    Akkam jirtu hundumti keessan?
+  </p>
+
+  <p>
+    Akkuma beekamu, Barumsa Sanbataa 9ffaa irratti{" "}
+    <strong>
+      Eebbi Album Faarfannaa Garee Maatii Waldaa
+      Adventistii Guyyaa TorbaffaaWUASDA ,waldaa Calalaqiitti
+    </strong>{" "}
+    ni raawwatama.
+  </p>
+
+  <p>
+    Galiin eebba faarfannaa kana irraa argamu
+    ijaarsa waldaatiif waan ooluuf, jiraattonni
+    Magaalaa Naqamtee hundi sagantaa kana irratti
+    akka argamtan kabajaan afeeramtaniittu.
+  </p>
+
+  <p>
+    Fagoo kan jirtan immoo karaa toora TikTok
+    armaan gadii nu hordofuu dandeessu.
+  </p>
+
+  <div className="announcement-footer">
+    🙏 Hundi keessan kottaa nu waliin gammadaa!
+  </div>
+</section>
       </main>
 
       <footer id="contact">
